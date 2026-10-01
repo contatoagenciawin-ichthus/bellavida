@@ -1,22 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "routes": [
     {
-      "source": "/equipe",
-      "destination": "/index.html"
+      "handle": "filesystem"
     },
     {
-      "source": "/sobre",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/contato",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/campanhas",
-      "destination": "/index.html"
+      "src": "/.*",
+      "dest": "/index.html"
     }
   ]
 }
